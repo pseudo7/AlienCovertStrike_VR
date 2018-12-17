@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 4ac37cf504ad35b49b8c9b9c54de24b5
+timeCreated: 1443644097
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: hip
+    100004: hip_connection
+    100006: hip_ctrl_curve
+    100008: ikHandle1
+    100010: ikHandle2
+    100012: ikHandle3
+    100014: ikHandle4
+    100016: ikHandle5
+    100018: ikHandle6
+    100020: joint15
+    100022: joint16
+    100024: joint17
+    100026: joint18
+    100028: joint6
+    100030: joint7
+    100032: joint8
+    100034: joint9
+    100036: joint_left_ankle
+    100038: joint_left_foot
+    100040: joint_left_knee
+    100042: joint_left_leg
+    100044: joint_left_toe
+    100046: joint_right_ankle
+    100048: joint_right_foot
+    100050: joint_right_knee
+    100052: joint_right_leg
+    100054: joint_right_toe
+    100056: joint_root
+    100058: joint_torso
+    100060: left_foot
+    100062: left_foot_ctrl_curve
+    100064: left_leg_lower
+    100066: left_leg_upper
+    100068: left_toe
+    100070: missile_left
+    100072: missile_right
+    100074: polySurface58
+    100076: right_foot
+    100078: right_foot_ctrl_curve
+    100080: right_leg_lower
+    100082: right_leg_upper
+    100084: right_toe
+    100086: torso
+    100088: torso_ctrl_curve
+    400000: //RootNode
+    400002: hip
+    400004: hip_connection
+    400006: hip_ctrl_curve
+    400008: ikHandle1
+    400010: ikHandle2
+    400012: ikHandle3
+    400014: ikHandle4
+    400016: ikHandle5
+    400018: ikHandle6
+    400020: joint15
+    400022: joint16
+    400024: joint17
+    400026: joint18
+    400028: joint6
+    400030: joint7
+    400032: joint8
+    400034: joint9
+    400036: joint_left_ankle
+    400038: joint_left_foot
+    400040: joint_left_knee
+    400042: joint_left_leg
+    400044: joint_left_toe
+    400046: joint_right_ankle
+    400048: joint_right_foot
+    400050: joint_right_knee
+    400052: joint_right_leg
+    400054: joint_right_toe
+    400056: joint_root
+    400058: joint_torso
+    400060: left_foot
+    400062: left_foot_ctrl_curve
+    400064: left_leg_lower
+    400066: left_leg_upper
+    400068: left_toe
+    400070: missile_left
+    400072: missile_right
+    400074: polySurface58
+    400076: right_foot
+    400078: right_foot_ctrl_curve
+    400080: right_leg_lower
+    400082: right_leg_upper
+    400084: right_toe
+    400086: torso
+    400088: torso_ctrl_curve
+    2300000: hip
+    2300002: hip_connection
+    2300004: left_foot
+    2300006: left_leg_lower
+    2300008: left_leg_upper
+    2300010: left_toe
+    2300012: missile_left
+    2300014: missile_right
+    2300016: polySurface58
+    2300018: right_foot
+    2300020: right_leg_lower
+    2300022: right_leg_upper
+    2300024: right_toe
+    2300026: torso
+    3300000: hip
+    3300002: hip_connection
+    3300004: left_foot
+    3300006: left_leg_lower
+    3300008: left_leg_upper
+    3300010: left_toe
+    3300012: missile_left
+    3300014: missile_right
+    3300016: polySurface58
+    3300018: right_foot
+    3300020: right_leg_lower
+    3300022: right_leg_upper
+    3300024: right_toe
+    3300026: torso
+    4300000: right_toe
+    4300002: right_foot
+    4300004: right_leg_lower
+    4300006: right_leg_upper
+    4300008: left_toe
+    4300010: left_foot
+    4300012: left_leg_lower
+    4300014: left_leg_upper
+    4300016: torso
+    4300018: missile_right
+    4300020: missile_left
+    4300022: polySurface58
+    4300024: hip
+    4300026: hip_connection
+    7400000: idle
+    7400002: walk
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn7
+    second: {fileID: 2100000, guid: 3d940873f1361954287a16eff3a04b93, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 15
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hip_ctrl_curve
+        weight: 1
+      - path: hip_ctrl_curve/joint_root
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/hip
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/hip/hip_connection
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/joint_left_knee
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/joint_left_knee/joint_left_ankle
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/joint_left_knee/joint_left_ankle/joint_left_foot
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/joint_left_knee/joint_left_ankle/joint_left_foot/joint_left_toe
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/joint_left_knee/joint_left_ankle/joint_left_foot/left_toe
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/joint_left_knee/joint_left_ankle/left_foot
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/joint_left_knee/left_leg_lower
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_left_leg/left_leg_upper
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/joint_right_knee
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/joint_right_knee/joint_right_ankle
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/joint_right_knee/joint_right_ankle/joint_right_foot
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/joint_right_knee/joint_right_ankle/joint_right_foot/joint_right_toe
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/joint_right_knee/joint_right_ankle/joint_right_foot/right_toe
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/joint_right_knee/joint_right_ankle/right_foot
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/joint_right_knee/right_leg_lower
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_right_leg/right_leg_upper
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_torso
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_torso/torso
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_torso/torso/missile_left
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_torso/torso/missile_right
+        weight: 1
+      - path: hip_ctrl_curve/joint_root/joint_torso/torso/polySurface58
+        weight: 1
+      - path: hip_ctrl_curve/torso_ctrl_curve
+        weight: 1
+      - path: left_foot_ctrl_curve
+        weight: 1
+      - path: left_foot_ctrl_curve/joint6
+        weight: 1
+      - path: left_foot_ctrl_curve/joint6/joint7
+        weight: 1
+      - path: left_foot_ctrl_curve/joint6/joint7/ikHandle3
+        weight: 1
+      - path: left_foot_ctrl_curve/joint6/joint7/joint8
+        weight: 1
+      - path: left_foot_ctrl_curve/joint6/joint7/joint8/ikHandle2
+        weight: 1
+      - path: left_foot_ctrl_curve/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: left_foot_ctrl_curve/joint6/joint7/joint8/joint9/ikHandle1
+        weight: 1
+      - path: right_foot_ctrl_curve
+        weight: 1
+      - path: right_foot_ctrl_curve/joint15
+        weight: 1
+      - path: right_foot_ctrl_curve/joint15/joint16
+        weight: 1
+      - path: right_foot_ctrl_curve/joint15/joint16/ikHandle6
+        weight: 1
+      - path: right_foot_ctrl_curve/joint15/joint16/joint17
+        weight: 1
+      - path: right_foot_ctrl_curve/joint15/joint16/joint17/ikHandle5
+        weight: 1
+      - path: right_foot_ctrl_curve/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: right_foot_ctrl_curve/joint15/joint16/joint17/joint18/ikHandle4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: joint_root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

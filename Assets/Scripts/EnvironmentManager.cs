@@ -5,7 +5,9 @@ using UnityEngine;
 public class EnvironmentManager : MonoBehaviour
 {
     public GameObject[] buildings;
-    public GameObject[] enemies;
+    public GameObject[] wallEnemies;
+    public GameObject[] groundEnemies;
+
     public int numberOfBuildingPresets = 5;
     public Transform enemyParent, presetParent;
 
@@ -30,7 +32,7 @@ public class EnvironmentManager : MonoBehaviour
 
     void SpawnBuilding()
     {
-        for (int i = 0; i < numberOfBuildingPresets; i++)
+        for (int i = -numberOfBuildingPresets / 2; i < numberOfBuildingPresets / 2; i++)
             buildingPresetList.Add(Instantiate(buildings[Random.Range(0, buildings.Length)], new Vector3(0, -2, i * 100), Quaternion.identity, presetParent).GetComponent<BuildingPreset>());
         SpawnEnemies();
         StartCoroutine(ChangeExposerure());
@@ -39,13 +41,18 @@ public class EnvironmentManager : MonoBehaviour
     void SpawnEnemies()
     {
         foreach (var preset in buildingPresetList)
+        {
             foreach (var building in preset.buildings)
             {
-                var spawn = enemies[Random.Range(0, enemies.Length)];
-                var spawned = Instantiate(spawn, GetSpawnPos(building.BuildingInfo), Quaternion.Euler(-90, 0, 90), enemyParent);
-                spawned.transform.localScale = spawned.transform.position.x < 0 ? new Vector3(1, -1, 1) : Vector3.one;
+                var spawn = wallEnemies[Random.Range(0, wallEnemies.Length)];
+                var spawnedOnWall = Instantiate(spawn, GetSpawnPos(building.BuildingInfo), Quaternion.Euler(-90, 0, 90), enemyParent);
+                spawnedOnWall.transform.localScale = spawnedOnWall.transform.position.x < 0 ? new Vector3(1, -1, 1) : Vector3.one;
                 //if (spawned.transform.position.x < 0) spawn.transform.SetPositionAndRotation(spawn.transform.position, Quaternion.Euler(spawn.transform.rotation.eulerAngles + Vector3.up * 180));
             }
+            //for (int i = 0; i < 5; i++)
+            var spawnedOnGround = Instantiate(groundEnemies[Random.Range(0, groundEnemies.Length)], new Vector3(Random.Range(-1, 1) * 4, -2, Random.Range(preset.transform.position.z, preset.transform.position.z + 50)), Quaternion.identity);
+            spawnedOnGround.transform.rotation = Quaternion.Euler(0, spawnedOnGround.transform.position.z > 0 ? 180 : 0, 0);
+        }
     }
 
     IEnumerator ChangeExposerure()

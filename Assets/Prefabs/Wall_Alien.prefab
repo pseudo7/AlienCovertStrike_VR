@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4673447290056360}
   - component: {fileID: 136511864753577624}
   - component: {fileID: 54067311408817230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall_Alien
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4305444405846046}
   - component: {fileID: 33838597780446082}
   - component: {fileID: 23891842198065702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4599702850065800}
   - component: {fileID: 33517621641884738}
   - component: {fileID: 23157024489100286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Alien_HQ_Cocoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -196,7 +196,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -1.125
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -441,7 +441,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.875
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -606,7 +606,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: -1}
+  m_Center: {x: 0, y: -0.5, z: -1}
 --- !u!1 &688785463
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +727,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.625
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -1071,8 +1071,10 @@ MonoBehaviour:
   - {fileID: 1085625121108640, guid: 066dbc13e7325c04eb1c8fe0dab67e5e, type: 2}
   - {fileID: 1828467065727898, guid: d26315f2d0b9a1b44a13baa0e9b2b855, type: 2}
   - {fileID: 1298165043061782, guid: 3b40ed3f08cd05447b721e9990e1177c, type: 2}
-  enemies:
+  wallEnemies:
   - {fileID: 1089329416861966, guid: 699dc1e6a9412e440af6038407f02782, type: 2}
+  groundEnemies:
+  - {fileID: 1854629661558254, guid: 6edcb92d7ec9afb4a86a613c7b1e0f02, type: 2}
   numberOfBuildingPresets: 5
   enemyParent: {fileID: 9998695}
   presetParent: {fileID: 842062974}
@@ -1202,7 +1204,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.375
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -1542,7 +1544,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.125
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
