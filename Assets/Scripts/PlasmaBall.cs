@@ -11,6 +11,9 @@ public class PlasmaBall : MonoBehaviour
         {
             Destroy(collision.collider.gameObject);
         }
-        Destroy(gameObject);
+        if (collision.collider.CompareTag("GroundMech"))
+        {
+            Destroy(collision.collider.transform.parent.gameObject);
+        }
     }
 }

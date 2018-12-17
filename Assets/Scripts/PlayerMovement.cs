@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(mainCamTransform.position, mainCamTransform.forward, out hitInfo))
         {
-            if (hitInfo.collider.CompareTag("Enemy"))
+            if (hitInfo.collider.CompareTag("Enemy")|| hitInfo.collider.CompareTag("GroundMech"))
                 if (magazineStack.Count != magazineCapacity)
                 {
                     plasmaBullet = Instantiate(plasmaBlastPrefab, gunBarrelTransform.position, plasmaRotation);

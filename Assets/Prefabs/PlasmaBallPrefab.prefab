@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4502482314420262}
   - component: {fileID: 198658730035702270}
   - component: {fileID: 199100891603843452}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ErekiCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4252554297876558}
   - component: {fileID: 108676202221457612}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 4583182849385364}
   - component: {fileID: 198409282802675620}
   - component: {fileID: 199541783652927006}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ErekiSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,9 +74,9 @@ GameObject:
   - component: {fileID: 54210400022461254}
   - component: {fileID: 114411638587147330}
   - component: {fileID: 135728255110089620}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlasmaBallPrefab
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

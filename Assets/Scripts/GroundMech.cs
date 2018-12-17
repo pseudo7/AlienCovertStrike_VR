@@ -9,6 +9,7 @@ public class GroundMech : MonoBehaviour
     public float fireRate = 1.25f;
     public float missileSpeed = 5;
 
+
     static GameObject player;
 
     float countdown;
@@ -35,15 +36,11 @@ public class GroundMech : MonoBehaviour
         }
 
         if (other.CompareTag("MainCamera"))
-        {
             FireMissileAtRate();
-            Debug.Log("Entered Inside");
-        }
     }
 
     void FireMissileAtRate()
     {
-        Debug.Log("Entered");
         if (countdown > 1 / fireRate)
             FireMissile();
         else
