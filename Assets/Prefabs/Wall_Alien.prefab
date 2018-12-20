@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4673447290056360}
   - component: {fileID: 136511864753577624}
   - component: {fileID: 54067311408817230}
+  - component: {fileID: 114075552751478254}
   m_Layer: 8
   m_Name: Wall_Alien
   m_TagString: Enemy
@@ -200,6 +201,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114075552751478254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1089329416861966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d79763758d434dbb4e2f88203b4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alienDieShotPrefab: {fileID: 1109225236244570, guid: 34bfd67be5426fa4f9ed7e653514ee5d,
+    type: 2}
 --- !u!136 &136511864753577624
 CapsuleCollider:
   m_ObjectHideFlags: 1

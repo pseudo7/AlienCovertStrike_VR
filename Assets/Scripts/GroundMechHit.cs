@@ -21,12 +21,17 @@ public class GroundMechHit : MonoBehaviour
 
     public void HitGroundMech()
     {
-        Debug.LogWarning("HitGourndMech Called");
         bulletHits--;
         UpdateHealthBar(bulletHits / initHits);
 
         if (bulletHits <= 0)
-            Destroy(transform.parent.gameObject);
+        {
+            transform.GetComponentInParent<GroundMech>().enabled = false;
+            transform.GetComponentInParent<Collider>().enabled = false;
+            transform.GetComponentInParent<Animator>().enabled = false;
+            transform.GetChild(1).gameObject.SetActive(true);
+            Destroy(transform.parent.gameObject, 3f);
+        }
     }
 
     void UpdateHealthBar(float health)

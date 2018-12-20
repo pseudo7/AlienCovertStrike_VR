@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform gunBarrelTransform;
     public Transform magazineTransform;
     public Transform enemyParent;
+    public GameObject plasmaUI;
 
     int pos = 1;
     static int index = 0;
@@ -39,13 +40,17 @@ public class PlayerMovement : MonoBehaviour
 
     Stack<GameObject> magazineStack;
 
-    private void Start()
+    private IEnumerator Start()
     {
         StartCoroutine(RunningMovement());
         StartCoroutine(IncreaseSteps());
         plasmaRotation = Quaternion.Euler(0, 180, 0);
         mainCamTransform = Camera.main.transform;
         magazineStack = new Stack<GameObject>(magazineCapacity);
+        for (int i = 0; i < magazineCapacity; i++)
+            Instantiate(plasmaUI, magazineTransform);
+        yield return new WaitForEndOfFrame();
+        magazineTransform.GetComponent<VerticalLayoutGroup>().enabled = false;
     }
 
     void Update()
@@ -58,7 +63,34 @@ public class PlayerMovement : MonoBehaviour
 
         ResetAcc();
         FireAtRate();
-        accText.text = string.Format("Enemies\nLeft:{0}", enemyParent.childCount.ToString("0#"));
+        //accText.text = string.Format("Enemies\nLeft:{0}", enemyParent.childCount.ToString("0#"));
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        StartCoroutine(ShowHitFlash());
+        StartCoroutine(ShakeCamera(.5f));
+    }
+
+    IEnumerator ShowHitFlash()
+    {
+        transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+    }
+
+    IEnumerator ShakeCamera(float duration)
+    {
+        var origPos = transform.position;
+        while ((duration -= Time.deltaTime) > 0)
+        {
+            var randomPos = Random.insideUnitCircle;
+            transform.position = new Vector3(randomPos.x, randomPos.y + 2, transform.position.z);
+            yield return new WaitForEndOfFrame();
+        }
+        transform.position = new Vector3(origPos.x, origPos.y, transform.position.z);
     }
 
     float GetRunningValue()

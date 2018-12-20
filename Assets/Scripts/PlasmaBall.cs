@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlasmaBall : MonoBehaviour
 {
+    public GameObject blowUpEffect;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Enemy"))
@@ -13,9 +15,8 @@ public class PlasmaBall : MonoBehaviour
         Destroy(gameObject);
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("GroundMech"))
-    //        other.GetComponent<GroundMechHit>().HitGourndMech();
-    //}
+    private void OnDestroy()
+    {
+        Destroy(Instantiate(blowUpEffect, transform.position, Quaternion.identity), 1f);
+    }
 }

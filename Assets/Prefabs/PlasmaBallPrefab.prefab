@@ -198,6 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6d95c3840c9a942a8e79867d951d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blowUpEffect: {fileID: 1630892535666906, guid: 85e1d0e210f490343a1f5679912cac6e,
+    type: 2}
 --- !u!135 &135728255110089620
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -270,7 +272,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 233964909
+  randomSeed: -1100452606
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3595,7 +3597,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -743435265
+  randomSeed: 1562692329
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6944,7 +6946,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1472207740
+  randomSeed: 1398445848
   InitialModule:
     serializedVersion: 3
     enabled: 1
