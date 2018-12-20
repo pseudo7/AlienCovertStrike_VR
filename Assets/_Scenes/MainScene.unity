@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.01186285, g: 0.0473253, b: 0.053657793, a: 1}
+  m_IndirectSpecularColor: {r: 0.011861443, g: 0.0473222, b: 0.053655796, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -1.125
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -254,6 +254,47 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
     type: 2}
   m_PrefabInternal: {fileID: 106523214}
+--- !u!1 &339678608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 339678609}
+  - component: {fileID: 339678610}
+  m_Layer: 1
+  m_Name: End_Collider
+  m_TagString: Boundary
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339678609
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339678608}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1891841813}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &339678610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339678608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &427828912
 Prefab:
   m_ObjectHideFlags: 0
@@ -441,7 +482,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.875
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -727,7 +768,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.625
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -813,6 +854,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1033841612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1033841613}
+  - component: {fileID: 1033841614}
+  m_Layer: 1
+  m_Name: Start_Collider
+  m_TagString: Boundary
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1033841613
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033841612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1891841813}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1033841614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033841612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1041934973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1160,8 @@ MonoBehaviour:
   numberOfBuildingPresets: 5
   enemyParent: {fileID: 9998695}
   presetParent: {fileID: 842062974}
+  startCollider: {fileID: 1033841613}
+  endCollider: {fileID: 339678609}
 --- !u!4 &1249407323
 Transform:
   m_ObjectHideFlags: 0
@@ -1204,7 +1288,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.375
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -1544,7 +1628,7 @@ Prefab:
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.125
       objectReference: {fileID: 0}
     - target: {fileID: 224394667778842648, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda,
         type: 2}
@@ -1625,6 +1709,8 @@ Transform:
   - {fileID: 465482642}
   - {fileID: 1184599619}
   - {fileID: 1637086783}
+  - {fileID: 1033841613}
+  - {fileID: 339678609}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

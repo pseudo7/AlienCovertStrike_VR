@@ -10,7 +10,7 @@ public class EnvironmentManager : MonoBehaviour
 
     public int numberOfBuildingPresets = 5;
     public Transform enemyParent, presetParent;
-
+    public Transform startCollider, endCollider;
     List<BuildingPreset> buildingPresetList;
 
     bool swapSpace;
@@ -22,7 +22,6 @@ public class EnvironmentManager : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-
     [UnityEditor.MenuItem("Pseudo/Capture")]
     public static void Capture()
     {
@@ -32,8 +31,17 @@ public class EnvironmentManager : MonoBehaviour
 
     void SpawnBuilding()
     {
+        //var startCollider = enemyParent.gameObject.AddComponent<BoxCollider>();
+        //startCollider.size = new Vector3(50f, 10f, 1f);
+        //startCollider.center = new Vector3(0, 0, (numberOfBuildingPresets / 2) * 100 - 50);
+        startCollider.position += Vector3.back * ((numberOfBuildingPresets / 2) * 100);
         for (int i = -numberOfBuildingPresets / 2; i < numberOfBuildingPresets / 2; i++)
             buildingPresetList.Add(Instantiate(buildings[Random.Range(0, buildings.Length)], new Vector3(0, -2, i * 100), Quaternion.identity, presetParent).GetComponent<BuildingPreset>());
+        //var endCollider = enemyParent.gameObject.AddComponent<BoxCollider>();
+        //endCollider.size = new Vector3(50f, 10f, 1f);
+        //endCollider.center = new Vector3(0, 0, numberOfBuildingPresets * 100 + 50);
+        endCollider.position += Vector3.forward * ((numberOfBuildingPresets / 2) * 100);
+        //endCollider.center = new Vector3(0, 0, (numberOfBuildingPresets / 2) * -100 + 50);
         SpawnEnemies();
         StartCoroutine(ChangeExposerure());
     }
@@ -49,9 +57,11 @@ public class EnvironmentManager : MonoBehaviour
                 spawnedOnWall.transform.localScale = spawnedOnWall.transform.position.x < 0 ? new Vector3(1, -1, 1) : Vector3.one;
                 //if (spawned.transform.position.x < 0) spawn.transform.SetPositionAndRotation(spawn.transform.position, Quaternion.Euler(spawn.transform.rotation.eulerAngles + Vector3.up * 180));
             }
-            //for (int i = 0; i < 5; i++)
-            var spawnedOnGround = Instantiate(groundEnemies[Random.Range(0, groundEnemies.Length)], new Vector3(Random.Range(-1, 1) * 4, -2, Random.Range(preset.transform.position.z, preset.transform.position.z + 50)), Quaternion.identity);
-            spawnedOnGround.transform.rotation = Quaternion.Euler(0, spawnedOnGround.transform.position.z > 0 ? 180 : 0, 0);
+            //for (int i = 0; i < 2; i++)
+            {
+                var spawnedOnGround = Instantiate(groundEnemies[Random.Range(0, groundEnemies.Length)], new Vector3(Random.Range(0, 100) % 2 == 0 ? -4 : 4, -1.5f, Random.Range(preset.transform.position.z, preset.transform.position.z + 50)), Quaternion.identity);
+                spawnedOnGround.transform.rotation = Quaternion.Euler(0, spawnedOnGround.transform.position.z > 0 ? 180 : 0, 0);
+            }
         }
     }
 
