@@ -45,8 +45,10 @@ public class GroundMech : MonoBehaviour
     {
         countdown = 0;
         var spawnPosition = Random.onUnitSphere * .1f + ((swapBarrel = !swapBarrel) ? leftBarrel.position : rightBarrel.position);
-        var spawnedMissile = Instantiate(missilePrefab, spawnPosition, missilePrefab.transform.rotation, transform);
-        spawnedMissile.GetComponent<Rigidbody>().AddForce((playerCam.transform.position + new Vector3(0, .5f) - spawnPosition).normalized * missileSpeed, ForceMode.VelocityChange);
+        var playerDirection = (playerCam.transform.position + new Vector3(0, .5f) - spawnPosition).normalized;
+        var spawnRotation = Quaternion.LookRotation(playerDirection);
+        var spawnedMissile = Instantiate(missilePrefab, spawnPosition, spawnRotation, transform);
+        spawnedMissile.GetComponent<Rigidbody>().AddForce(playerDirection * missileSpeed, ForceMode.VelocityChange);
         Destroy(spawnedMissile, 5);
     }
 }

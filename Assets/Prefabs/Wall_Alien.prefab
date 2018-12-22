@@ -212,8 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63d79763758d434dbb4e2f88203b4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alienDieShotPrefab: {fileID: 1109225236244570, guid: 34bfd67be5426fa4f9ed7e653514ee5d,
+  alienDieShotPrefab: {fileID: 1109225236244570, guid: 16820424ef2c5c14ea3b258178d351a4,
     type: 2}
+  shotSpeed: 50
 --- !u!136 &136511864753577624
 CapsuleCollider:
   m_ObjectHideFlags: 1

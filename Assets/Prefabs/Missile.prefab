@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 199885115012147168}
   - component: {fileID: 54866703166318670}
   - component: {fileID: 135229561506025694}
+  - component: {fileID: 114398076400768734}
   m_Layer: 12
   m_Name: Missile
   m_TagString: Untagged
@@ -155,6 +156,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114398076400768734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1109225236244570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07baaad75ee512f479534c22c61be98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135229561506025694
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -178,7 +190,7 @@ ParticleSystem:
   simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1

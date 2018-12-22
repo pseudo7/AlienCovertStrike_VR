@@ -18,14 +18,13 @@ public class PlayerMovement : MonoBehaviour
     public Transform[] paths;
     public Transform[] lanes;
 
-    public Text accText;
-
     public GvrReticlePointer gvrReticle;
 
     public GameObject plasmaBlastPrefab;
     public Transform gunBarrelTransform;
     public Transform magazineTransform;
     public Transform enemyParent;
+    public GameObject gunTranform;
     public GameObject plasmaUI;
 
     int pos = 1;
@@ -131,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
             if (hitInfo.collider.CompareTag("Enemy") || hitInfo.collider.CompareTag("GroundMech"))
                 if (magazineStack.Count != magazineCapacity)
                 {
+                    ShowRecoilEffect();
                     plasmaBullet = Instantiate(plasmaBlastPrefab, gunBarrelTransform.position, plasmaRotation);
                     plasmaBullet.GetComponent<Rigidbody>().AddForce((hitInfo.point - gunBarrelTransform.position).normalized * bulletSpeed, ForceMode.VelocityChange);
                     magazineStack.Push(plasmaBullet);
@@ -138,6 +138,11 @@ public class PlayerMovement : MonoBehaviour
                     StartCoroutine(ClearFromMagazine(plasmaLifeTime, plasmaBullet));
                 }
         }
+    }
+
+    void ShowRecoilEffect()
+    {
+        LeanTween.moveLocalZ(gunTranform, .45f, .25f).setEaseOutBounce().setOnComplete(() => { LeanTween.moveLocalZ(gunTranform, .5f, .25f); });
     }
 
     IEnumerator ClearFromMagazine(float delay, GameObject go)

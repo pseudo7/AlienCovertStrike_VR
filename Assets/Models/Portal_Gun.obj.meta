@@ -1,0 +1,408 @@
+fileFormatVersion: 2
+guid: baa2deaab940aa143bb8f98b293b597d
+timeCreated: 1545476442
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Portal_Gun
+    100004: Portal_Gun-1
+    100006: Portal_Gun-10
+    100008: Portal_Gun-2
+    100010: Portal_Gun-3
+    100012: Portal_Gun-4
+    100014: Portal_Gun-5
+    100016: Portal_Gun-6
+    100018: Portal_Gun-7
+    100020: Portal_Gun-8
+    100022: Portal_Gun-9
+    100024: Portal_Gun_Claw
+    100026: Portal_Gun_Claw-1
+    100028: Portal_Gun_Claw-2
+    100030: Portal_Gun_Claw-3
+    100032: Portal_Gun_Claw-4
+    100034: Portal_Gun_Claw-5
+    100036: Portal_Gun_Claw_1
+    100038: Portal_Gun_Claw_2
+    100040: Portal_Gun_Claw_2-1
+    100042: Portal_Gun_Claw_2-2
+    100044: Portal_Gun_Claw_2-3
+    100046: Portal_Gun_Claw_2-4
+    100048: Portal_Gun_Claw_2-5
+    100050: Portal_Gun_Claw_3-1
+    100052: Portal_Gun_Claw_3-2
+    100054: Portal_Gun_Claw_3-3
+    100056: Portal_Gun_Claw_3-4
+    100058: Portal_Gun_Claw_3-5
+    400000: //RootNode
+    400002: Portal_Gun
+    400004: Portal_Gun-1
+    400006: Portal_Gun-10
+    400008: Portal_Gun-2
+    400010: Portal_Gun-3
+    400012: Portal_Gun-4
+    400014: Portal_Gun-5
+    400016: Portal_Gun-6
+    400018: Portal_Gun-7
+    400020: Portal_Gun-8
+    400022: Portal_Gun-9
+    400024: Portal_Gun_Claw
+    400026: Portal_Gun_Claw-1
+    400028: Portal_Gun_Claw-2
+    400030: Portal_Gun_Claw-3
+    400032: Portal_Gun_Claw-4
+    400034: Portal_Gun_Claw-5
+    400036: Portal_Gun_Claw_1
+    400038: Portal_Gun_Claw_2
+    400040: Portal_Gun_Claw_2-1
+    400042: Portal_Gun_Claw_2-2
+    400044: Portal_Gun_Claw_2-3
+    400046: Portal_Gun_Claw_2-4
+    400048: Portal_Gun_Claw_2-5
+    400050: Portal_Gun_Claw_3-1
+    400052: Portal_Gun_Claw_3-2
+    400054: Portal_Gun_Claw_3-3
+    400056: Portal_Gun_Claw_3-4
+    400058: Portal_Gun_Claw_3-5
+    2100000: Portal_GunMat
+    2100002: Portal_Gun-1Mat
+    2100004: Portal_Gun-10Mat
+    2100006: Portal_Gun-2Mat
+    2100008: Portal_Gun-3Mat
+    2100010: Portal_Gun-4Mat
+    2100012: Portal_Gun-5Mat
+    2100014: Portal_Gun-6Mat
+    2100016: Portal_Gun-7Mat
+    2100018: Portal_Gun-8Mat
+    2100020: Portal_Gun-9Mat
+    2100022: Portal_Gun_ClawMat
+    2100024: Portal_Gun_Claw-1Mat
+    2100026: Portal_Gun_Claw-2Mat
+    2100028: Portal_Gun_Claw-3Mat
+    2100030: Portal_Gun_Claw-4Mat
+    2100032: Portal_Gun_Claw-5Mat
+    2100034: Portal_Gun_Claw_1Mat
+    2100036: Portal_Gun_Claw_2Mat
+    2100038: Portal_Gun_Claw_2-1Mat
+    2100040: Portal_Gun_Claw_2-2Mat
+    2100042: Portal_Gun_Claw_2-3Mat
+    2100044: Portal_Gun_Claw_2-4Mat
+    2100046: Portal_Gun_Claw_2-5Mat
+    2100048: Portal_Gun_Claw_3-1Mat
+    2100050: Portal_Gun_Claw_3-2Mat
+    2100052: Portal_Gun_Claw_3-3Mat
+    2100054: Portal_Gun_Claw_3-4Mat
+    2100056: Portal_Gun_Claw_3-5Mat
+    2300000: Portal_Gun
+    2300002: Portal_Gun-1
+    2300004: Portal_Gun-10
+    2300006: Portal_Gun-2
+    2300008: Portal_Gun-3
+    2300010: Portal_Gun-4
+    2300012: Portal_Gun-5
+    2300014: Portal_Gun-6
+    2300016: Portal_Gun-7
+    2300018: Portal_Gun-8
+    2300020: Portal_Gun-9
+    2300022: Portal_Gun_Claw
+    2300024: Portal_Gun_Claw-1
+    2300026: Portal_Gun_Claw-2
+    2300028: Portal_Gun_Claw-3
+    2300030: Portal_Gun_Claw-4
+    2300032: Portal_Gun_Claw-5
+    2300034: Portal_Gun_Claw_1
+    2300036: Portal_Gun_Claw_2
+    2300038: Portal_Gun_Claw_2-1
+    2300040: Portal_Gun_Claw_2-2
+    2300042: Portal_Gun_Claw_2-3
+    2300044: Portal_Gun_Claw_2-4
+    2300046: Portal_Gun_Claw_2-5
+    2300048: Portal_Gun_Claw_3-1
+    2300050: Portal_Gun_Claw_3-2
+    2300052: Portal_Gun_Claw_3-3
+    2300054: Portal_Gun_Claw_3-4
+    2300056: Portal_Gun_Claw_3-5
+    3300000: Portal_Gun
+    3300002: Portal_Gun-1
+    3300004: Portal_Gun-10
+    3300006: Portal_Gun-2
+    3300008: Portal_Gun-3
+    3300010: Portal_Gun-4
+    3300012: Portal_Gun-5
+    3300014: Portal_Gun-6
+    3300016: Portal_Gun-7
+    3300018: Portal_Gun-8
+    3300020: Portal_Gun-9
+    3300022: Portal_Gun_Claw
+    3300024: Portal_Gun_Claw-1
+    3300026: Portal_Gun_Claw-2
+    3300028: Portal_Gun_Claw-3
+    3300030: Portal_Gun_Claw-4
+    3300032: Portal_Gun_Claw-5
+    3300034: Portal_Gun_Claw_1
+    3300036: Portal_Gun_Claw_2
+    3300038: Portal_Gun_Claw_2-1
+    3300040: Portal_Gun_Claw_2-2
+    3300042: Portal_Gun_Claw_2-3
+    3300044: Portal_Gun_Claw_2-4
+    3300046: Portal_Gun_Claw_2-5
+    3300048: Portal_Gun_Claw_3-1
+    3300050: Portal_Gun_Claw_3-2
+    3300052: Portal_Gun_Claw_3-3
+    3300054: Portal_Gun_Claw_3-4
+    3300056: Portal_Gun_Claw_3-5
+    4300000: Portal_Gun
+    4300002: Portal_Gun-1
+    4300004: Portal_Gun-10
+    4300006: Portal_Gun-2
+    4300008: Portal_Gun-3
+    4300010: Portal_Gun-4
+    4300012: Portal_Gun-5
+    4300014: Portal_Gun-6
+    4300016: Portal_Gun-7
+    4300018: Portal_Gun-8
+    4300020: Portal_Gun-9
+    4300022: Portal_Gun_Claw
+    4300024: Portal_Gun_Claw-1
+    4300026: Portal_Gun_Claw-2
+    4300028: Portal_Gun_Claw-3
+    4300030: Portal_Gun_Claw-4
+    4300032: Portal_Gun_Claw-5
+    4300034: Portal_Gun_Claw_1
+    4300036: Portal_Gun_Claw_2
+    4300038: Portal_Gun_Claw_2-1
+    4300040: Portal_Gun_Claw_2-2
+    4300042: Portal_Gun_Claw_2-3
+    4300044: Portal_Gun_Claw_2-4
+    4300046: Portal_Gun_Claw_2-5
+    4300048: Portal_Gun_Claw_3-1
+    4300050: Portal_Gun_Claw_3-2
+    4300052: Portal_Gun_Claw_3-3
+    4300054: Portal_Gun_Claw_3-4
+    4300056: Portal_Gun_Claw_3-5
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-10Mat
+    second: {fileID: 2100000, guid: f3c9967391312ec43b9d0166a5240601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-1Mat
+    second: {fileID: 2100000, guid: f06ec3cceaab249428268a9b33d79614, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-2Mat
+    second: {fileID: 2100000, guid: 6d9c0ef95dbe6f24c9cdd117cc888257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-3Mat
+    second: {fileID: 2100000, guid: d788e2af0e0782b42814c3c482a9b91c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-4Mat
+    second: {fileID: 2100000, guid: 999f6a675c879f743ad154e24b2f9790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-5Mat
+    second: {fileID: 2100000, guid: 578b08be4c06a564e9cbd7331e44a84b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-6Mat
+    second: {fileID: 2100000, guid: 19897d4583d7eb24bb00f3d4bb33857c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-7Mat
+    second: {fileID: 2100000, guid: f58c18a96d5e9aa4eb19d494856a5a3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-8Mat
+    second: {fileID: 2100000, guid: c74c3d6f117a4c14797cb21266bf3709, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun-9Mat
+    second: {fileID: 2100000, guid: fe55955790eff094f8da7f97184c5e54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_GunMat
+    second: {fileID: 2100000, guid: 78ebe7a2c9b8ddc43adabe5416ba7835, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw-1Mat
+    second: {fileID: 2100000, guid: a0df1c49a4fb73d49bcdb6d336309f41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw-2Mat
+    second: {fileID: 2100000, guid: d570f38806b29784ba1a3bcc058e0ef3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw-3Mat
+    second: {fileID: 2100000, guid: 140a51933e0ae2b49bbdcf7b3571e0c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw-4Mat
+    second: {fileID: 2100000, guid: 8a0498fc14485954b96505bf6dec42ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw-5Mat
+    second: {fileID: 2100000, guid: 2b6cac4944e28c047b58a8da0d2bd820, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_ClawMat
+    second: {fileID: 2100000, guid: 4e7186f7575e89b44bfe992aed9b3a76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_1Mat
+    second: {fileID: 2100000, guid: 40612025f2f11b8409e814669101024c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_2-1Mat
+    second: {fileID: 2100000, guid: 93a9e5b39518ca345be5e20dff17a2f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_2-2Mat
+    second: {fileID: 2100000, guid: 75b82cb8ddea45e45b27ce58c74b71ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_2-3Mat
+    second: {fileID: 2100000, guid: 4a483f3ab0a7fa14188dd7e2d3e8c7a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_2-4Mat
+    second: {fileID: 2100000, guid: 29359e35789885644a87b9e11db1b41d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_2-5Mat
+    second: {fileID: 2100000, guid: ca7579d84704dde4799940f75af152a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_2Mat
+    second: {fileID: 2100000, guid: 4c20378cdd8c1a54f94d98606c0566fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_3-1Mat
+    second: {fileID: 2100000, guid: 5f3b8082d3649fe47b027b7e9e056728, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_3-2Mat
+    second: {fileID: 2100000, guid: c423be0a0cf92294b96708bfd52edd92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_3-3Mat
+    second: {fileID: 2100000, guid: 137b712d27b05cc4b8d98cd65113e164, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_3-4Mat
+    second: {fileID: 2100000, guid: b38afe2adc9ea66448b0d20f12974cfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portal_Gun_Claw_3-5Mat
+    second: {fileID: 2100000, guid: 9b17410e663eced47b6b0733cfa49efa, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.001
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

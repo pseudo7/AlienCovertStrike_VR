@@ -576,6 +576,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &897799770 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1949184059327982, guid: e83312c0fabea1543985b69f9c07cad3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1174635219}
 --- !u!1 &1033841612
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,13 +683,13 @@ MonoBehaviour:
   - {fileID: 1184599619}
   - {fileID: 1778700155}
   - {fileID: 1637086783}
-  accText: {fileID: 1475894561}
   gvrReticle: {fileID: 427828913}
   plasmaBlastPrefab: {fileID: 1761199364912400, guid: da9447749c903684da36f919ac9f3754,
     type: 2}
   gunBarrelTransform: {fileID: 1218737733}
   magazineTransform: {fileID: 2123337653}
   enemyParent: {fileID: 9998695}
+  gunTranform: {fileID: 897799770}
   plasmaUI: {fileID: 1323155065024600, guid: 4bc40a32dd5d4a64e8dab9d4fcb69fda, type: 2}
   bulletSpeed: 50
 --- !u!65 &1041934976
@@ -697,7 +702,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 0.1}
+  m_Size: {x: 2, y: 2, z: 0.5}
   m_Center: {x: 0, y: -0.23, z: 0}
 --- !u!4 &1082463508 stripped
 Transform:
@@ -776,7 +781,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1001 &1114011625
+--- !u!4 &1114011626 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1174635219}
+--- !u!1001 &1174635219
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -785,31 +795,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.197
+      value: 0.197
       objectReference: {fileID: 0}
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.231
+      value: -0.225
       objectReference: {fileID: 0}
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.162
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.07558996
+      value: -0.00034904052
       objectReference: {fileID: 0}
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.06712526
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.00510019
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.99486405
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
       propertyPath: m_RootOrder
@@ -818,11 +828,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e83312c0fabea1543985b69f9c07cad3, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1114011626 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4156995792853360, guid: e83312c0fabea1543985b69f9c07cad3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1114011625}
 --- !u!1 &1184599618
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +860,7 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 4452612950005366, guid: e83312c0fabea1543985b69f9c07cad3,
     type: 2}
-  m_PrefabInternal: {fileID: 1114011625}
+  m_PrefabInternal: {fileID: 1174635219}
 --- !u!1 &1249407321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9, y: 2.0125}
+  m_AnchoredPosition: {x: -1.9, y: 2.0125}
   m_SizeDelta: {x: 0.5, y: 2.3751}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2123337654
