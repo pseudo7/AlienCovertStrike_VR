@@ -10,13 +10,15 @@
 
 
 # Screenshots
-<img src="/Screenshots/636806757529500383.png">
-<img src="/Screenshots/636806757937007680.png">
-<img src="/Screenshots/636806758249718350.png">
-<img src="/Screenshots/636806758578698958.png">
-<img src="/Screenshots/636806758726703085.png">
-<img src="/Screenshots/636806758911341547.png">
-<img src="/Screenshots/636806758976708083.png">
-<img src="/Screenshots/636806759113318495.png">
-<img src="/Screenshots/636806759166770888.png">
-<img src="/Screenshots/636806759526724040.png">
+<img src="/Screenshots/1.png">
+<img src="/Screenshots/2.png">
+<img src="/Screenshots/3.png">
+<img src="/Screenshots/4.png">
+<img src="/Screenshots/5.png">
+<img src="/Screenshots/6.png">
+<img src="/Screenshots/7.png">
+<img src="/Screenshots/8.png">
+<img src="/Screenshots/9.png">
+<img src="/Screenshots/10.png">
+<img src="/Screenshots/11.png">
+<img src="/Screenshots/12.png">
