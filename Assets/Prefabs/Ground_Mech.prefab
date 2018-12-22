@@ -2478,9 +2478,9 @@ MonoBehaviour:
     type: 2}
   leftBarrel: {fileID: 4038553829252656}
   rightBarrel: {fileID: 4284318706768628}
-  fireRate: 0
+  fireRate: 1
   missileSpeed: 30
-  playerCheckRadius: 30
+  playerCheckRadius: 40
   torso: {fileID: 4410819344257248}
 --- !u!136 &136155671936567082
 CapsuleCollider:
