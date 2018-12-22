@@ -7,7 +7,11 @@
 ### Player just need to point at the enemy (you are alone in this game, everyone in an enemy) to shoot at it.
 ### You can tilt you head `Left` or `Right` to change the lane.
 ### You can edit the Player Speed, Fire Rate, Magazine Size, etc. in Unity Inspector itself. 
+### Some enemy shoot you back when killed.
+### Awesome particle effects, plus modifiable.
+`All the above is in Stage 1 of the development.`
 
+## Stage 2: Wandering cities, looking for enemies and dodging them to win.
 
 # Screenshots
 <img src="/Screenshots/1.png">
