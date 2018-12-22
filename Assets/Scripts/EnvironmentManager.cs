@@ -25,7 +25,7 @@ public class EnvironmentManager : MonoBehaviour
     [UnityEditor.MenuItem("Pseudo/Capture")]
     public static void Capture()
     {
-        ScreenCapture.CaptureScreenshot(System.DateTime.Now.Ticks.ToString());
+        ScreenCapture.CaptureScreenshot(string.Format("Screenshots{0}{1}.png", System.IO.Path.DirectorySeparatorChar, System.DateTime.Now.Ticks.ToString()));
     }
 #endif
 
