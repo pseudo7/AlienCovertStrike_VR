@@ -49,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
         for (int i = 0; i < magazineCapacity; i++)
             Instantiate(plasmaUI, magazineTransform);
         yield return new WaitForEndOfFrame();
+        var canvasRect = magazineTransform.parent.GetComponent<RectTransform>();
+        canvasRect.sizeDelta = new Vector2(Screen.width / 1000f, Screen.height / 1000f);
         magazineTransform.GetComponent<VerticalLayoutGroup>().enabled = false;
     }
 
@@ -108,16 +110,25 @@ public class PlayerMovement : MonoBehaviour
 
     float CloserValue(float a, float b, float val)
     {
-        //CloserValue(0, 90, Mathf.Abs(mainCamTransform.rotation.eulerAngles.y % 180));
         return Mathf.Abs(val - a) < Mathf.Abs(val - b) ? a : b;
     }
 
     void CheckStrife()
     {
-        if (Input.acceleration.x < -.4f)
-            MovePlayerLeft();
-        else if (Input.acceleration.x > .4f)
-            MovePlayerRight();
+        if (Vector3.Angle(mainCamTransform.forward, mainCamTransform.parent.forward) < 90)
+        {
+            if (Input.acceleration.x < -.4f)
+                MovePlayerLeft();
+            else if (Input.acceleration.x > .4f)
+                MovePlayerRight();
+        }
+        else
+        {
+            if (Input.acceleration.x < -.4f)
+                MovePlayerRight();
+            else if (Input.acceleration.x > .4f)
+                MovePlayerLeft();
+        }
     }
 
     void Fire()
