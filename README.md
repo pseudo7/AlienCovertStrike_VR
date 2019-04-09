@@ -4,6 +4,10 @@
 
 ### It is an endless-runner game that can be played using simple `Google Cardboard.`
 
+<p align="center">
+<img src="GIFs/Alien.gif">
+</p>
+
 ### Player just need to point at the enemy (you are alone in this game, everyone in an enemy) to shoot at it.
 ### You can tilt you head `Left` or `Right` to change the lane.
 ### You can edit the Player Speed, Fire Rate, Magazine Size, etc. in Unity Inspector itself. 
